@@ -139,14 +139,6 @@ p {
   margin: 0;
   font-size: 18px;
 }
-.feature-card {
-  flex: 1;
-  padding: 20px 24px;
-  margin-bottom: 0;
-  bottom: 1px solid #deddea;
-  border-radius: 12px;
-  background-color: #f4f3ff;
-}
 .steps-list li {
   display: flex;
   align-items: center;
