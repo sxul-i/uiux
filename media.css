@@ -23,7 +23,8 @@
   p {
     font-size: 16px;
   }
-  input {
+  input,
+  select {
     font-size: 16px;
     padding: 8px;
   }
@@ -34,6 +35,16 @@
     padding: 12px 20px;
     font-size: 16px;
   }
+  .hint,
+  .msg {
+    font-size: 14px;
+  }
+  .tab {
+    padding: 12px 10px;
+  }
+  .about-list li {
+    gap: 16px;
+  }
   .features-list li h4 {
     font-size: 18px;
   }
@@ -41,6 +52,7 @@
     font-size: 16px;
   }
 }
+
 @media (max-width: 768px) {
   main,
   footer {
@@ -50,7 +62,7 @@
   header .inner {
     flex-direction: column;
     justify-content: center;
-    padding: 20px 18px;
+    padding: 20px 18px 15px;
   }
   header .title {
     flex-direction: row;
@@ -87,6 +99,13 @@
     margin: 20px auto 40px;
     border-radius: 12px;
   }
+  .tab {
+    padding: 12px 6px;
+    font-size: 15px;
+  }
+  .tab-panel {
+    padding-top: 24px;
+  }
   .about-list li {
     gap: 10px;
   }
@@ -97,11 +116,16 @@
   .steps-list li {
     justify-content: space-between;
   }
+  .features-list {
+    grid-auto-flow: row;
+  }
   .features-list li {
     padding: 16px;
   }
   .features-list li h4 {
+    width: 100%;
     font-size: 16px;
+    text-align: center;
   }
   .features-list li p {
     font-size: 15px;
@@ -110,9 +134,18 @@
     padding: 30px 24px;
     margin-top: 80px;
   }
-  input {
+  form {
+    max-width: none;
+  }
+  input,
+  select,
+  button {
+    height: 42px;
+  }
+  input,
+  select {
     font-size: 14px;
-    padding: 4px;
+    padding: 6px 8px;
   }
   label {
     font-size: 15px;
@@ -121,10 +154,15 @@
     padding: 6px 18px;
     font-size: 14px;
   }
+  .hint,
+  .msg {
+    font-size: 13px;
+  }
   footer {
     margin-top: 60px;
   }
 }
+
 @media (max-width: 390px) {
   header .inner {
     padding: 16px 18px;
@@ -154,6 +192,33 @@
   h2 {
     font-size: 18px;
   }
+  .tabs {
+    gap: 4px;
+  }
+  .tab {
+    padding: 10px 2px;
+    font-size: 13px;
+  }
+  .tab-panel {
+    padding-top: 16px;
+  }
+  .about-list li {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 10px;
+    padding: 8px 0;
+    white-space: normal;
+  }
+  .about-list li p {
+    margin: 0;
+  }
+  .about-list li p:nth-child(n) {
+    width: auto;
+  }
+  .about-list li p:nth-child(2) {
+    grid-column: 1 / -1;
+    font-weight: 700;
+  }
   .features-list {
     gap: 6px;
   }
@@ -180,10 +245,10 @@
     margin-top: 50px;
   }
   .subscribe-card p {
-    margin-top: 0;
+    margin-top: 5px;
+    line-height: 20px;
   }
   form {
-    flex-wrap: wrap;
     margin-top: 20px;
   }
   form button {

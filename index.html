@@ -2,114 +2,196 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <title>Re:hear</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>중간고사</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="media.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
   </head>
 
   <body>
-    <header>
-      <div class="inner">
-        <div class="title">
-          <h1>서울사이버대학교</h1>
-          <p>포털서비스(학생)</p>
+    <div class="wrap">
+      <header>
+        <div class="inner">
+          <div class="title">
+            <h1>서울사이버대학교</h1>
+            <p>포털서비스(학생)</p>
+          </div>
+          <nav aria-label="주요 메뉴">
+            <a href="./index.html" class="active">학습메뉴</a>
+            <a href="./service.html">고객센터</a>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <h2>OOO 학우님 안녕하세요.</h2>
+        <img src="assets/images/img_campus1.jpg" alt="ai 생성 이미지" />
+
+        <div class="tabs" role="tablist" aria-label="포털 정보 탭">
+          <button
+            type="button"
+            role="tab"
+            id="tab-about"
+            aria-controls="about"
+            aria-selected="true"
+            class="tab is-active"
+          >
+            학습활동
+          </button>
+          <button
+            type="button"
+            role="tab"
+            id="tab-score"
+            aria-controls="score"
+            aria-selected="false"
+            class="tab"
+            tabindex="-1"
+          >
+            학점 이수 현황
+          </button>
+          <button
+            type="button"
+            role="tab"
+            id="tab-steps"
+            aria-controls="steps"
+            aria-selected="false"
+            class="tab"
+            tabindex="-1"
+          >
+            학사공지
+          </button>
         </div>
 
-        <nav aria-label="주요 메뉴">
-          <a href="#about">학습활동</a>
-          <a href="#score">학점 이수 현황</a>
-          <a href="#steps">학사공지</a>
-          <a href="#subscribe">고객센터</a>
-        </nav>
-      </div>
-    </header>
+        <section
+          id="about"
+          role="tabpanel"
+          aria-labelledby="tab-about"
+          class="tab-panel"
+        >
+          <h3>학습활동</h3>
+          <p>4학년 2학기 출석 현황</p>
+          <ol class="about-list">
+            <li>
+              <p>4학기</p>
+              <p>UI/UX프로그래밍</p>
+              <p>3학점</p>
+              <p>윤보라</p>
+              <p>7.7/20점</p>
+            </li>
+            <li>
+              <p>4학기</p>
+              <p>정보처리실무</p>
+              <p>3학점</p>
+              <p>이영준</p>
+              <p>7.7/20점</p>
+            </li>
+            <li>
+              <p>4학기</p>
+              <p>중급중국어</p>
+              <p>3학점</p>
+              <p>김성훈</p>
+              <p>7.7/20점</p>
+            </li>
+          </ol>
+        </section>
 
-    <main>
-      <h2>OOO 학우님 안녕하세요.</h2>
-      <img src="assets/images/img_campus1.jpg" alt="ai 생성 이미지" />
-      <section id="about">
-        <h3>학습활동</h3>
-        <p>4학년 2학기 출석 현황</p>
-        <ol class="about-list">
-          <li>
-            <p>4학기</p>
-            <p>UI/UX프로그래밍</p>
-            <p>3학점</p>
-            <p>윤보라</p>
-            <p>7.7/20점</p>
-          </li>
-          <li>
-            <p>4학기</p>
-            <p>정보처리실무</p>
-            <p>3학점</p>
-            <p>이영준</p>
-            <p>7.7/20점</p>
-          </li>
-          <li>
-            <p>4학기</p>
-            <p>중급중국어</p>
-            <p>3학점</p>
-            <p>김성훈</p>
-            <p>7.7/20점</p>
-          </li>
-        </ol>
-      </section>
-      <section id="score">
-        <h3>학점 이수 현황</h3>
-        <ul class="features-list">
-          <li>
-            <h4>이수 학점</h4>
-            <p>54점</p>
-          </li>
-          <li>
-            <h4>수강중 학점</h4>
-            <p>14점</p>
-          </li>
-          <li>
-            <h4>평점 평균</h4>
-            <p>4점</p>
-          </li>
-        </ul>
-      </section>
-      <section id="steps">
-        <h3>학사공지</h3>
-        <ol class="steps-list">
-          <li>
-            <p>2026학년도 2학기 중간시험 실시 및 유의사항 안내</p>
-            <span>2026.10.02</span>
-          </li>
-          <li>
-            <p>2026학년도 재학생 초청 문화행사 발레 <지젤> 안내</p>
-            <span>2026.10.02</span>
-          </li>
-          <li>
-            <p>2026학년도 2학기 중간강의평가 실시 안내</p>
-            <span>2026.10.02</span>
-          </li>
-          <li>
-            <p>[필독] CLMS 출석안내</p>
-            <span>2026.10.02</span>
-          </li>
-          <li>
-            <p>제31기 해외역사문화탐방 안내</p>
-            <span>2026.10.02</span>
-          </li>
-        </ol>
-      </section>
-      <section id="subscribe" class="subscribe-card">
-        <h3>고객센터</h3>
-        <p>연락처를 남겨주시면 상담원이 확인 후 전화드리겠습니다.</p>
-        <form>
-          <label for="tel">연락처</label>
-          <input type="tel" id="tel" name="tel" />
-          <button type="submit">상담 예약</button>
-        </form>
-      </section>
-    </main>
+        <section
+          id="score"
+          role="tabpanel"
+          aria-labelledby="tab-score"
+          class="tab-panel"
+          hidden
+        >
+          <h3>학점 이수 현황</h3>
+          <ul class="features-list">
+            <li>
+              <h4>이수 학점</h4>
+              <p>54점</p>
+            </li>
+            <li>
+              <h4>수강중 학점</h4>
+              <p>14점</p>
+            </li>
+            <li>
+              <h4>평점 평균</h4>
+              <p>4점</p>
+            </li>
+          </ul>
+        </section>
 
-    <footer>
-      <small>© 2026 서울사이버대학교</small>
-    </footer>
+        <section
+          id="steps"
+          role="tabpanel"
+          aria-labelledby="tab-steps"
+          class="tab-panel"
+          hidden
+        >
+          <h3>학사공지</h3>
+          <ol class="steps-list">
+            <li>
+              <p>2026학년도 2학기 중간시험 실시 및 유의사항 안내</p>
+              <span>2026.10.02</span>
+            </li>
+            <li>
+              <p>2026학년도 재학생 초청 문화행사 발레 &lt;지젤&gt; 안내</p>
+              <span>2026.10.02</span>
+            </li>
+            <li>
+              <p>2026학년도 2학기 중간강의평가 실시 안내</p>
+              <span>2026.10.02</span>
+            </li>
+            <li>
+              <p>[필독] CLMS 출석안내</p>
+              <span>2026.10.02</span>
+            </li>
+            <li>
+              <p>제31기 해외역사문화탐방 안내</p>
+              <span>2026.10.02</span>
+            </li>
+          </ol>
+        </section>
+
+        <section id="subscribe" class="subscribe-card">
+          <h3>고객센터</h3>
+          <p>연락처를 남겨주시면 상담원이 확인 후 전화드리겠습니다.</p>
+          <form id="consult-form" novalidate>
+            <label for="type">상담 유형</label>
+            <select id="type" name="type">
+              <option value="학적">학적·휴복학</option>
+              <option value="수강">수강·출석</option>
+              <option value="성적">성적·학점</option>
+              <option value="시스템">시스템·로그인</option>
+            </select>
+            <p id="type-hint" class="hint">학적 상담 · 평일 09:00~18:00</p>
+
+            <label for="tel">연락처</label>
+            <input
+              type="tel"
+              id="tel"
+              name="tel"
+              inputmode="numeric"
+              placeholder="010-1234-5678"
+              autocomplete="tel"
+              maxlength="13"
+              aria-describedby="tel-msg"
+            />
+            <p id="tel-msg" class="msg" aria-live="polite">
+              연락처를 입력해 주세요.
+            </p>
+
+            <button type="submit" id="submit-btn" disabled>상담 예약</button>
+          </form>
+        </section>
+      </main>
+
+      <footer>
+        <div class="inner">
+          <small>© 2026 서울사이버대학교</small>
+        </div>
+      </footer>
+
+      <!-- 팝업 -->
+    </div>
   </body>
 </html>
