@@ -308,3 +308,72 @@ select:focus {
 button:active {
   transform: translateY(1px);
 }
+
+.my-list-box {
+  margin-top: 40px;
+  padding-top: 32px;
+  border-top: 1px solid #dfdfdf;
+}
+.my-list-box h4 {
+  margin: 0;
+  font-size: 20px;
+}
+.list-empty {
+  margin-top: 16px;
+  padding: 24px 20px;
+  text-align: center;
+  background-color: #f7f7fb;
+  border: 1px dashed #bcbcbc;
+  border-radius: 12px;
+}
+.list-empty[hidden] {
+  display: none;
+}
+.list-empty p {
+  margin: 0 0 12px;
+}
+.list-empty button {
+  padding: 0 20px;
+}
+.my-list {
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.list-item {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  margin-bottom: 10px;
+  padding: 14px 16px;
+  background-color: #f7f7fb;
+  border: 1px solid #deddea;
+  border-radius: 12px;
+}
+.list-item strong {
+  flex: 1;
+}
+.list-item button {
+  height: 36px;
+  padding: 0 14px;
+  font-size: 14px;
+}
+.badge {
+  padding: 2px 10px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #00abb3;
+  border-radius: 999px;
+}
+.list-item.is-canceled {
+  color: #999999;
+  background-color: #f3f3f3;
+}
+.list-item.is-canceled strong {
+  text-decoration: line-through;
+}
+.list-item.is-canceled .badge {
+  background-color: #999999;
+}

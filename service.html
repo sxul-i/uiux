@@ -55,17 +55,26 @@
             <p id="tel-msg" class="msg" aria-live="polite">
               연락처를 입력해 주세요.
             </p>
-
             <button type="submit" id="submit-btn" disabled>상담 예약</button>
+            <p id="form-status" class="msg" role="status"></p>
           </form>
+
+          <div class="my-list-box">
+            <h4>내 상담 예약 내역</h4>
+            <div id="list-empty" class="list-empty">
+              <p>아직 예약 내역이 없습니다. 위에서 상담을 예약해 보세요.</p>
+              <button type="button" id="reservation">상담 예약하러 가기</button>
+            </div>
+            <ul id="my-list" class="my-list"></ul>
+          </div>
         </section>
       </main>
 
       <footer>
-        <small>© 2026 서울사이버대학교</small>
+        <div class="inner">
+          <small>© 2026 서울사이버대학교</small>
+        </div>
       </footer>
-
-      <!-- 팝업 -->
     </div>
   </body>
 </html>
